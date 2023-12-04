@@ -22,7 +22,6 @@ catch let error as NSError {
 var PART_TWO = false
 let arguments = CommandLine.arguments
 if arguments.contains("two") {
-    print("yeah")
     PART_TWO = true
 }
 
