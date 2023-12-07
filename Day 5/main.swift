@@ -73,16 +73,9 @@ func getLocation(seed: Int) -> Int {
     return number
 }
 
-//print(getLocation(seed: 3429320627))
-
 var reverse_word_dict = word_dict.keys.reduce(into: [String: String](), {result, key in
     result[word_dict[key]] = key
 })
-
-/*func seedExistsForLocation(location: Int) async -> Task<Int> {
-    let task = Task
-    return task
-}*/
 
 let start = 0
 let TASK_LIMIT = 20
