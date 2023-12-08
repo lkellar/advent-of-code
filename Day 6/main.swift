@@ -49,11 +49,6 @@ func doesStratWin(time_held: Int, total_time: Int, distance_record: Int) -> Bool
     return time_held * time_released > distance_record
 }
 
-func onLowerBound(time_held: Int, total_time: Int, distance_record: Int) -> Bool {
-    return !(doesStratWin(time_held: time_held, total_time: total_time, distance_record: distance_record)) &&
-    doesStratWin(time_held: time_held, total_time: total_time, distance_record: distance_record)
-}
-
 var total = 1
 for index in 0..<times.count {
     // integer division catches edge case
