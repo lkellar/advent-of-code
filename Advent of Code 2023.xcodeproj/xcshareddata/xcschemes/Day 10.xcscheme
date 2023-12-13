@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A056DE082B2675620051FF79"
-               BuildableName = "Day 9"
-               BlueprintName = "Day 9"
+               BlueprintIdentifier = "A0108E9F2B27814E0002FE01"
+               BuildableName = "Day 10"
+               BlueprintName = "Day 10"
                ReferencedContainer = "container:Advent of Code 2023.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,9 +44,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A056DE082B2675620051FF79"
-            BuildableName = "Day 9"
-            BlueprintName = "Day 9"
+            BlueprintIdentifier = "A0108E9F2B27814E0002FE01"
+            BuildableName = "Day 10"
+            BlueprintName = "Day 10"
             ReferencedContainer = "container:Advent of Code 2023.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -58,6 +58,10 @@
          <CommandLineArgument
             argument = "input.txt"
             isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "spec_5.txt"
+            isEnabled = "NO">
          </CommandLineArgument>
       </CommandLineArguments>
    </LaunchAction>
@@ -71,9 +75,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A056DE082B2675620051FF79"
-            BuildableName = "Day 9"
-            BlueprintName = "Day 9"
+            BlueprintIdentifier = "A0108E9F2B27814E0002FE01"
+            BuildableName = "Day 10"
+            BlueprintName = "Day 10"
             ReferencedContainer = "container:Advent of Code 2023.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
