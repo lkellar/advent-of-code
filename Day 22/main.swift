@@ -1,8 +1,8 @@
 //
 //  main.swift
-//  Day 21
+//  Day 22
 //
-//  Created by Lucas Kellar on 7/3/24.
+//  Created by Lucas Kellar on 7/8/24.
 //
 
 import Foundation
