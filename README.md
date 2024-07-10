@@ -4,4 +4,4 @@ Completing Advent of Code on and off between work/school projects in an effort t
 
 Most days are written from a "clean enough to understand later, but focused towards completing the day quickly" so much of the code isn't particularly polished 
 
-Currently **22/25** days of 2023 completed
+Currently **23/25** days of 2023 completed
