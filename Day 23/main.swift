@@ -44,11 +44,6 @@ enum Direction: Int {
     case down = 3
 }
 
-struct Primum {
-    var worst_distance: Int? = nil
-    //var lineageId: UUID
-}
-
 struct Coord: Hashable {
     var row: Int
     var col: Int
@@ -115,8 +110,6 @@ let lines = contents.split(whereSeparator: \.isNewline).map { $0.map { Spot(rawV
 
 let height = lines.count
 let width = lines[0].count
-
-var prims = Array(repeating: Array(repeating: Primum(), count: width), count: height)
 
 let allDirections: Set<Direction> = [.left, .right, .up, .down]
 
