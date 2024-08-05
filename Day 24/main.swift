@@ -29,7 +29,25 @@ enum HailstoneError: Error {
     case neverInterceptsBox
 }
 
-struct Coord: Hashable {
+struct Coord: Hashable, AdditiveArithmetic {
+    static func + (lhs: Coord, rhs: Coord) -> Coord {
+        return Coord(x: lhs.x + rhs.x, y: lhs.y + rhs.y, z: lhs.z + rhs.z)
+    }
+    
+    static func - (lhs: Coord, rhs: Coord) -> Coord {
+        return Coord(x: lhs.x - rhs.x, y: lhs.y - rhs.y, z: lhs.z - rhs.z)
+    }
+    
+    static func * (lhs: Coord, rhs: Double) -> Coord {
+        return Coord(x: lhs.x * rhs, y: lhs.y * rhs, z: lhs.z * rhs)
+    }
+    
+    static func / (lhs: Coord, rhs: Double) -> Coord {
+        return Coord(x: lhs.x / rhs, y: lhs.y / rhs, z: lhs.z / rhs)
+    }
+    
+    static var zero: Coord = Coord(x: 0, y: 0, z: 0)
+    
     let x: Double
     let y: Double
     let z: Double
@@ -46,6 +64,18 @@ struct Coord: Hashable {
     }
     
     var description: String { return "(\(x), \(y), \(z))" }
+    
+    func crossWith(other: Coord) -> Coord {
+        let term_one = self.y * other.z - self.z * other.y
+        let term_two = -(self.x * other.z - self.z * other.x)
+        let term_three = self.x * other.y - self.y * other.x
+        
+        return Coord(x: term_one, y: term_two, z: term_three)
+    }
+    
+    func dotWith(other: Coord) -> Double {
+        return self.x * other.x + self.y * other.y + self.z * other.z
+    }
 }
 
 struct Intercept {
@@ -119,10 +149,27 @@ func findNextBoundingBoxInterception(start: Coord, deltas: Coord, considerZ: Boo
     }
 }
 
-struct Hailstone {
+struct Hailstone: AdditiveArithmetic {
+    // i probably wouldn't use these for part one
+    static func + (lhs: Hailstone, rhs: Hailstone) -> Hailstone {
+        return Hailstone(start: lhs.start + rhs.start, end: lhs.end + rhs.end, origin: lhs.origin + rhs.origin, deltas: lhs.deltas + rhs.deltas)
+    }
+    
+    static func - (lhs: Hailstone, rhs: Hailstone) -> Hailstone {
+        Hailstone(start: lhs.start - rhs.start, end: lhs.end - rhs.end, origin: lhs.origin - rhs.origin, deltas: lhs.deltas - rhs.deltas)
+    }
+    
+    static var zero: Hailstone = Hailstone()
+    
+    let origin: Coord
     let start: Coord
     let end: Coord
-    let slope: Double
+    var slope: Double {
+        if end.x - start.x == 0 {
+            return 0
+        }
+        return (end.y - start.y) / (end.x - start.x)
+    }
 
     // more of a vector really
     let deltas: Coord
@@ -163,6 +210,21 @@ struct Hailstone {
         // lines don't cross
         return nil
     }
+    
+    init() {
+        self.start = .zero
+        self.end = .zero
+        self.origin = .zero
+        self.deltas = .zero
+    }
+    
+    init(start: Coord, end: Coord, origin: Coord, deltas: Coord) {
+        self.start = start
+        self.end = end
+        self.origin = origin
+        self.deltas = deltas
+    }
+    
     init(_ str: String) throws {
         let splits = str.split(separator: "@")
 
@@ -174,7 +236,7 @@ struct Hailstone {
         precondition(deltas.y != 0, "DeltaY cannot be zero")
 
         let starts = splits[0].trimmingCharacters(in: .whitespaces).split(separator: ",").map { Double($0.trimmingCharacters(in: .whitespaces)) }
-        let origin = Coord(x: starts[0]!, y: starts[1]!, z: starts[2]!)
+        origin = Coord(x: starts[0]!, y: starts[1]!, z: starts[2]!)
         var localStart = origin
         while !localStart.withinBoundingBox {
             guard let next = findNextBoundingBoxInterception(start: localStart, deltas: deltas) else {
@@ -194,8 +256,6 @@ struct Hailstone {
         }
     
         self.end = end
-        
-        self.slope = (end.y - start.y) / (end.x - start.x)
     }
 }
 
@@ -217,11 +277,62 @@ func computeIntersections() -> Int {
     return intersections
 }
 
+// solution computed with help of https://old.reddit.com/r/adventofcode/comments/18pnycy/2023_day_24_solutions/kxqjg33/
+func partTwo() -> Double {
+    // only need three stones,
+    let stone_zero = lines[0]
+    // set stone one and stone two in relative to stone zero
+    let stone_one = lines[1] - stone_zero
+    let stone_two = lines[2] - stone_zero
+    
+    print("Positions: S1: \(stone_one.origin) | S2: \(stone_two.origin)")
+    print("Velocities: S1: \(stone_one.deltas) | S2: \(stone_two.deltas)")
+    
+    let stone_one_two_origin_cross = stone_one.origin.crossWith(other: stone_two.origin)
+
+    let time_one_numerator = -(stone_one_two_origin_cross.dotWith(other: stone_two.deltas))
+    let time_one_denominator = stone_one.deltas.crossWith(other: stone_two.origin).dotWith(other: stone_two.deltas)
+    let time_one = time_one_numerator / time_one_denominator
+
+    let time_two_numerator = -(stone_one_two_origin_cross.dotWith(other: stone_one.deltas))
+    let time_two_denominator = stone_one.origin.crossWith(other: stone_two.deltas).dotWith(other: stone_one.deltas)
+    let time_two = time_two_numerator / time_two_denominator
+
+    print("T1: \(time_one) | T2: \(time_two)")
+    
+    precondition(time_one >= 0 && time_two >= 0, "Times cannot be negative")
+
+    let collision_one = stone_one.origin + stone_one.deltas * time_one
+    let collision_two = stone_two.origin + stone_two.deltas * time_two
+    
+    print("C1: \(collision_one), C2: \(collision_two)")
+
+    let rock_velocity = (collision_two - collision_one) / (time_two - time_one)
+    var rock_position = collision_one - rock_velocity * time_one
+    
+    print("Rock Position: \(rock_position) | Velocity: \(rock_velocity)")
+    
+    // deshift position
+    // velocity would also need to be deshifted but we aren't using it for anything else so ignore
+    rock_position = rock_position + stone_zero.origin
+    
+    print("New Rock Position: \(rock_position)")
+    
+    // for some reason it only works if each rock position is floored
+    return floor(rock_position.x) + floor(rock_position.y) + floor(rock_position.z)
+}
+
 
 // PART_TWO handled within
-let clock = ContinuousClock()
-let elapsed = clock.measure {
-    let intersections = computeIntersections()
-    print("\(intersections) Intersections")
+if PART_TWO {
+    let answer = partTwo()
+    print("Sum of starting coord: \(answer)")
+} else {
+    let clock = ContinuousClock()
+    let elapsed = clock.measure {
+        let intersections = computeIntersections()
+        print("\(intersections) Intersections")
+    }
+    print("Took \(elapsed)")
 }
-print("Took \(elapsed)")
+
