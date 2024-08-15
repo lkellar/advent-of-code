@@ -1,4 +1,4 @@
-#  Advent of Code 2023
+#  Advent of Code
 
 Completing Advent of Code on and off between work/school projects in an effort to deepen my Swift knowledge.
 
