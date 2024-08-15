@@ -397,7 +397,6 @@
 		A01721022B1C1E25009C653D /* Day 1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 1"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A01721052B1C1E25009C653D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A017210C2B1C1EE2009C653D /* input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
-		A017210E2B1C2CFC009C653D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A02608982B2A9C730053C63D /* Day 11 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 11"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A026089A2B2A9C730053C63D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A026089F2B2A9C8E0053C63D /* spec.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = spec.txt; sourceTree = "<group>"; };
@@ -710,7 +709,6 @@
 		A01720F92B1C1E24009C653D = {
 			isa = PBXGroup;
 			children = (
-				A017210E2B1C2CFC009C653D /* README.md */,
 				A01721042B1C1E25009C653D /* Day 1 */,
 				A07DE6592B1D9678005FC356 /* Day 2 */,
 				A07DE6662B1D9BF9005FC356 /* Day 3 */,
