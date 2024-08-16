@@ -9,11 +9,6 @@ import Foundation
 
 let path = CommandLine.arguments[1]
 
-var PART_TWO = false
-if CommandLine.arguments.contains("two") {
-    PART_TWO = true
-}
-
 let contents: String;
 do {
     // Get the contents
@@ -36,7 +31,7 @@ extension Character {
     }
 }
 
-func compute() -> Int {
+func partOne() -> Int {
     var total = 0
     for line in lines {
         guard line.count % 2 == 0 else {
@@ -57,4 +52,22 @@ func compute() -> Int {
     return total
 }
 
-print("Total Priorities: \(compute())")
+func partTwo() -> Int {
+    var total = 0
+    guard lines.count % 3 == 0 else {
+        print("Rucksacks are not in groups of 3")
+        exit(1)
+    }
+    for index in stride(from: 0, to: lines.count, by: 3) {
+        let intersec = Set(lines[index]).intersection(Set(lines[index+1])).intersection(Set(lines[index+2]))
+        guard intersec.count == 1 else {
+            print("Intersection has count \(intersec.count)")
+            exit(1)
+        }
+        total += intersec.first!.priority
+    }
+    return total
+}
+
+print("Part One | Total Priorities: \(partOne())")
+print("Part Two | Intersect Priorities: \(partTwo())")
