@@ -6,4 +6,4 @@ Most days are written from a "clean enough to understand later, but focused towa
 
 ### Progress
 - 2023: **25/25**
-- 2022: 5/25
+- 2022: 6/25
