@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1600"
+   LastUpgradeVersion = "1610"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,10 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A09083752C6ED21D00E2425B"
-               BuildableName = "Day 3"
-               BlueprintName = "Day 3"
-               ReferencedContainer = "container:Advent of Code 2022.xcodeproj">
+               BlueprintIdentifier = "A0EFDBC42CFC89F8006B6AD2"
+               BuildableName = "Day 1"
+               BlueprintName = "Day 1"
+               ReferencedContainer = "container:Advent of Code 2024.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,10 +45,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A09083752C6ED21D00E2425B"
-            BuildableName = "Day 3"
-            BlueprintName = "Day 3"
-            ReferencedContainer = "container:Advent of Code 2022.xcodeproj">
+            BlueprintIdentifier = "A0EFDBC42CFC89F8006B6AD2"
+            BuildableName = "Day 1"
+            BlueprintName = "Day 1"
+            ReferencedContainer = "container:Advent of Code 2024.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
@@ -58,6 +58,10 @@
          </CommandLineArgument>
          <CommandLineArgument
             argument = "input.txt"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "two"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
@@ -72,10 +76,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A09083752C6ED21D00E2425B"
-            BuildableName = "Day 3"
-            BlueprintName = "Day 3"
-            ReferencedContainer = "container:Advent of Code 2022.xcodeproj">
+            BlueprintIdentifier = "A0EFDBC42CFC89F8006B6AD2"
+            BuildableName = "Day 1"
+            BlueprintName = "Day 1"
+            ReferencedContainer = "container:Advent of Code 2024.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

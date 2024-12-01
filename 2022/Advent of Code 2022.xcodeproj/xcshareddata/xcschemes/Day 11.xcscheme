@@ -15,9 +15,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A09083752C6ED21D00E2425B"
-               BuildableName = "Day 3"
-               BlueprintName = "Day 3"
+               BlueprintIdentifier = "A0FC19ED2C7E2C2D00593840"
+               BuildableName = "Day 11"
+               BlueprintName = "Day 11"
                ReferencedContainer = "container:Advent of Code 2022.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,19 +45,23 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A09083752C6ED21D00E2425B"
-            BuildableName = "Day 3"
-            BlueprintName = "Day 3"
+            BlueprintIdentifier = "A0FC19ED2C7E2C2D00593840"
+            BuildableName = "Day 11"
+            BlueprintName = "Day 11"
             ReferencedContainer = "container:Advent of Code 2022.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
             argument = "spec.txt"
-            isEnabled = "NO">
+            isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
             argument = "input.txt"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "two"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
@@ -72,9 +76,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A09083752C6ED21D00E2425B"
-            BuildableName = "Day 3"
-            BlueprintName = "Day 3"
+            BlueprintIdentifier = "A0FC19ED2C7E2C2D00593840"
+            BuildableName = "Day 11"
+            BlueprintName = "Day 11"
             ReferencedContainer = "container:Advent of Code 2022.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
