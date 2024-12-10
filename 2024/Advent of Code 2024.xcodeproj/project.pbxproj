@@ -61,6 +61,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A0EE5DD62D06AEA10060F774 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A0EFDBC32CFC89F8006B6AD2 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
@@ -88,11 +97,20 @@
 		A03C27382D040E9B00AA5A8D /* Day 7 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 7"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A075BFCE2CFE0B0000D32068 /* Day 2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 2"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0EE5DC62D0699FB0060F774 /* Day 8 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 8"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0EE5DD82D06AEA10060F774 /* Day 9 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 9"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0EFDBC52CFC89F8006B6AD2 /* Day 1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 1"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0FE7D9F2CFEC7DC003F233C /* Day 3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 3"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		A00C988D2D081BCF00BBC0FC /* Exceptions for "Day 9" folder in "Copy Files" phase from "Day 9" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = A0EE5DD62D06AEA10060F774 /* CopyFiles */;
+			membershipExceptions = (
+				input.txt,
+				spec.txt,
+			);
+		};
 		A0238D4E2D016D9C0064B042 /* Exceptions for "Day 5" folder in "Copy Files" phase from "Day 5" target */ = {
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
 			buildPhase = A0238D412D016D660064B042 /* CopyFiles */;
@@ -209,6 +227,14 @@
 			path = "Day 8";
 			sourceTree = "<group>";
 		};
+		A0EE5DD92D06AEA10060F774 /* Day 9 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A00C988D2D081BCF00BBC0FC /* Exceptions for "Day 9" folder in "Copy Files" phase from "Day 9" target */,
+			);
+			path = "Day 9";
+			sourceTree = "<group>";
+		};
 		A0EFDBC62CFC89F8006B6AD2 /* Day 1 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -270,6 +296,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A0EE5DD52D06AEA10060F774 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A0EFDBC22CFC89F8006B6AD2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -298,6 +331,7 @@
 				A028C5012D02C75100470FD0 /* Day 6 */,
 				A03C27392D040E9C00AA5A8D /* Day 7 */,
 				A0EE5DC72D0699FB0060F774 /* Day 8 */,
+				A0EE5DD92D06AEA10060F774 /* Day 9 */,
 				A05EB39C2CFC89AD00FE96C0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -313,6 +347,7 @@
 				A028C5002D02C75100470FD0 /* Day 6 */,
 				A03C27382D040E9B00AA5A8D /* Day 7 */,
 				A0EE5DC62D0699FB0060F774 /* Day 8 */,
+				A0EE5DD82D06AEA10060F774 /* Day 9 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -452,6 +487,28 @@
 			productReference = A0EE5DC62D0699FB0060F774 /* Day 8 */;
 			productType = "com.apple.product-type.tool";
 		};
+		A0EE5DD72D06AEA10060F774 /* Day 9 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0EE5DDC2D06AEA10060F774 /* Build configuration list for PBXNativeTarget "Day 9" */;
+			buildPhases = (
+				A0EE5DD42D06AEA10060F774 /* Sources */,
+				A0EE5DD52D06AEA10060F774 /* Frameworks */,
+				A0EE5DD62D06AEA10060F774 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A0EE5DD92D06AEA10060F774 /* Day 9 */,
+			);
+			name = "Day 9";
+			packageProductDependencies = (
+			);
+			productName = "Day 9";
+			productReference = A0EE5DD82D06AEA10060F774 /* Day 9 */;
+			productType = "com.apple.product-type.tool";
+		};
 		A0EFDBC42CFC89F8006B6AD2 /* Day 1 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0EFDBC92CFC89F8006B6AD2 /* Build configuration list for PBXNativeTarget "Day 1" */;
@@ -524,6 +581,9 @@
 					A0EE5DC52D0699FB0060F774 = {
 						CreatedOnToolsVersion = 16.1;
 					};
+					A0EE5DD72D06AEA10060F774 = {
+						CreatedOnToolsVersion = 16.1;
+					};
 					A0EFDBC42CFC89F8006B6AD2 = {
 						CreatedOnToolsVersion = 16.1;
 					};
@@ -556,6 +616,7 @@
 				A028C4FF2D02C75100470FD0 /* Day 6 */,
 				A03C27372D040E9B00AA5A8D /* Day 7 */,
 				A0EE5DC52D0699FB0060F774 /* Day 8 */,
+				A0EE5DD72D06AEA10060F774 /* Day 9 */,
 			);
 		};
 /* End PBXProject section */
@@ -597,6 +658,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A0EE5DC22D0699FB0060F774 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0EE5DD42D06AEA10060F774 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -870,6 +938,28 @@
 			};
 			name = Release;
 		};
+		A0EE5DDD2D06AEA10060F774 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27888865CT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A0EE5DDE2D06AEA10060F774 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27888865CT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		A0EFDBCA2CFC89F8006B6AD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -976,6 +1066,15 @@
 			buildConfigurations = (
 				A0EE5DCA2D0699FB0060F774 /* Debug */,
 				A0EE5DCB2D0699FB0060F774 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0EE5DDC2D06AEA10060F774 /* Build configuration list for PBXNativeTarget "Day 9" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0EE5DDD2D06AEA10060F774 /* Debug */,
+				A0EE5DDE2D06AEA10060F774 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
