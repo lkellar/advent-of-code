@@ -111,11 +111,7 @@ func findStart() -> Coord? {
     return nil
 }
 
-func compute() -> Int? {
-    guard let start = findStart() else {
-        print("No start found")
-        exit(1)
-    }
+func compute(start: Coord) -> Int? {
     prims[start.y][start.x][start.dir.rawValue].best_distance = 0
     var queue: Heap<Coord> = Heap([start])
     
@@ -164,11 +160,45 @@ func printMap(from: Coord, path: [Coord: Character]) {
     }
 }
 
-if let result = compute() {
+// past.last will be used as the neighbors
+// not the fastest or most efficent, but it works!
+func findTargetLengthPath(path: [Coord], target: Int, distSoFar: Int) -> Set<Coord> {
+    if target == 0 {
+        return Set(path.map { $0.asNone })
+    }
+    if target < 0 {
+        return Set()
+    }
+    let next = path.last!
+    
+    guard prims[next.y][next.x][next.dir.rawValue].best_distance == distSoFar else {
+        return Set()
+    }
+    
+    let neighbors = next.getNeighbors().filter {
+        !path.contains($0)
+        && lines[$0.y][$0.x] != .Wall
+    }
+    
+    var result = Set<Coord>()
+    for neighbor in neighbors {
+        let dist = next.dir != neighbor.dir ? 1001 : 1
+        result.formUnion(findTargetLengthPath(path: path + [neighbor], target: target - dist, distSoFar: distSoFar + dist))
+    }
+    return Set(result.map { $0.asNone })
+}
+
+
+guard let start = findStart() else {
+    print("No start found")
+    exit(1)
+}
+
+if let result = compute(start: start) {
+    print("Shortest Dist: \(result)")
     if PART_TWO {
-        print("Eligible Tiles: \(result)")
-    } else {
-        print("Shortest Dist: \(result)")
+        let pathTiles = findTargetLengthPath(path: [start], target: result, distSoFar: 0)
+        print("Eligible Tiles: \(pathTiles.count)")
     }
 } else {
     print("NOT FOUND")
