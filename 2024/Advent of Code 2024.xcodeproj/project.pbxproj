@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A0F0507D2D17776000719B4B /* HeapModule in Frameworks */ = {isa = PBXBuildFile; productRef = A0F0507C2D17776000719B4B /* HeapModule */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		A005FD8A2D0A0D61002BAF19 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -133,6 +137,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A0F050702D176DF400719B4B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A0FE7D9D2CFEC7DC003F233C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
@@ -159,6 +172,7 @@
 		A0EE5DC62D0699FB0060F774 /* Day 8 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 8"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0EE5DD82D06AEA10060F774 /* Day 9 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 9"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0EFDBC52CFC89F8006B6AD2 /* Day 1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 1"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0F050722D176DF400719B4B /* Day 16 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 16"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0FE7D9F2CFEC7DC003F233C /* Day 3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 3"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -279,6 +293,15 @@
 			buildPhase = A0EFDBC32CFC89F8006B6AD2 /* CopyFiles */;
 			membershipExceptions = (
 				input.txt,
+				spec.txt,
+			);
+		};
+		A0F050802D1786D900719B4B /* Exceptions for "Day 16" folder in "Copy Files" phase from "Day 16" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = A0F050702D176DF400719B4B /* CopyFiles */;
+			membershipExceptions = (
+				input.txt,
+				spec_two.txt,
 				spec.txt,
 			);
 		};
@@ -406,6 +429,14 @@
 			path = "Day 1";
 			sourceTree = "<group>";
 		};
+		A0F050732D176DF400719B4B /* Day 16 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A0F050802D1786D900719B4B /* Exceptions for "Day 16" folder in "Copy Files" phase from "Day 16" target */,
+			);
+			path = "Day 16";
+			sourceTree = "<group>";
+		};
 		A0FE7DA02CFEC7DC003F233C /* Day 3 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -515,6 +546,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A0F0506F2D176DF400719B4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0F0507D2D17776000719B4B /* HeapModule in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A0FE7D9C2CFEC7DC003F233C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -543,6 +582,7 @@
 				A0EBDB632D0CF77E00053B82 /* Day 13 */,
 				A0EBDB732D0F79A800053B82 /* Day 14 */,
 				A00A46B52D12331700CB4A60 /* Day 15 */,
+				A0F050732D176DF400719B4B /* Day 16 */,
 				A05EB39C2CFC89AD00FE96C0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -565,6 +605,7 @@
 				A0EBDB622D0CF77E00053B82 /* Day 13 */,
 				A0EBDB722D0F79A800053B82 /* Day 14 */,
 				A00A46B42D12331700CB4A60 /* Day 15 */,
+				A0F050722D176DF400719B4B /* Day 16 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -880,6 +921,29 @@
 			productReference = A0EFDBC52CFC89F8006B6AD2 /* Day 1 */;
 			productType = "com.apple.product-type.tool";
 		};
+		A0F050712D176DF400719B4B /* Day 16 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0F050762D176DF400719B4B /* Build configuration list for PBXNativeTarget "Day 16" */;
+			buildPhases = (
+				A0F0506E2D176DF400719B4B /* Sources */,
+				A0F0506F2D176DF400719B4B /* Frameworks */,
+				A0F050702D176DF400719B4B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A0F050732D176DF400719B4B /* Day 16 */,
+			);
+			name = "Day 16";
+			packageProductDependencies = (
+				A0F0507C2D17776000719B4B /* HeapModule */,
+			);
+			productName = "Day 16";
+			productReference = A0F050722D176DF400719B4B /* Day 16 */;
+			productType = "com.apple.product-type.tool";
+		};
 		A0FE7D9E2CFEC7DC003F233C /* Day 3 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0FE7DA52CFEC7DC003F233C /* Build configuration list for PBXNativeTarget "Day 3" */;
@@ -954,6 +1018,9 @@
 					A0EFDBC42CFC89F8006B6AD2 = {
 						CreatedOnToolsVersion = 16.1;
 					};
+					A0F050712D176DF400719B4B = {
+						CreatedOnToolsVersion = 16.2;
+					};
 					A0FE7D9E2CFEC7DC003F233C = {
 						CreatedOnToolsVersion = 16.1;
 					};
@@ -969,6 +1036,7 @@
 			mainGroup = A05EB3922CFC89AD00FE96C0;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
+				A0F0507B2D17776000719B4B /* XCRemoteSwiftPackageReference "swift-collections" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A05EB39C2CFC89AD00FE96C0 /* Products */;
@@ -990,6 +1058,7 @@
 				A0EBDB612D0CF77E00053B82 /* Day 13 */,
 				A0EBDB712D0F79A800053B82 /* Day 14 */,
 				A00A46B32D12331700CB4A60 /* Day 15 */,
+				A0F050712D176DF400719B4B /* Day 16 */,
 			);
 		};
 /* End PBXProject section */
@@ -1087,6 +1156,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A0EFDBC12CFC89F8006B6AD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0F0506E2D176DF400719B4B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1555,6 +1631,28 @@
 			};
 			name = Release;
 		};
+		A0F050772D176DF400719B4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27888865CT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A0F050782D176DF400719B4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27888865CT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		A0FE7DA32CFEC7DC003F233C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1717,6 +1815,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		A0F050762D176DF400719B4B /* Build configuration list for PBXNativeTarget "Day 16" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0F050772D176DF400719B4B /* Debug */,
+				A0F050782D176DF400719B4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A0FE7DA52CFEC7DC003F233C /* Build configuration list for PBXNativeTarget "Day 3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1727,6 +1834,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A0F0507B2D17776000719B4B /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A0F0507C2D17776000719B4B /* HeapModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0F0507B2D17776000719B4B /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = HeapModule;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A05EB3932CFC89AD00FE96C0 /* Project object */;
 }
