@@ -65,6 +65,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A037DC622D17CE8700D8BD71 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A03C27362D040E9B00AA5A8D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
@@ -164,6 +173,7 @@
 		A024B6F32D08EDDE00D676C2 /* Day 10 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 10"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A025261D2D00B04D00B0FB1F /* Day 4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 4"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A028C5002D02C75100470FD0 /* Day 6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 6"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A037DC642D17CE8700D8BD71 /* Day 17 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 17"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03C27382D040E9B00AA5A8D /* Day 7 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 7"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A075BFCE2CFE0B0000D32068 /* Day 2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 2"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A08831852D0BC95F00C9CA31 /* Day 12 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 12"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -226,6 +236,15 @@
 			buildPhase = A028C4FE2D02C75100470FD0 /* CopyFiles */;
 			membershipExceptions = (
 				input.txt,
+				spec.txt,
+			);
+		};
+		A037DC702D17D86700D8BD71 /* Exceptions for "Day 17" folder in "Copy Files" phase from "Day 17" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = A037DC622D17CE8700D8BD71 /* CopyFiles */;
+			membershipExceptions = (
+				input.txt,
+				spec_two.txt,
 				spec.txt,
 			);
 		};
@@ -365,6 +384,14 @@
 			path = "Day 6";
 			sourceTree = "<group>";
 		};
+		A037DC652D17CE8700D8BD71 /* Day 17 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A037DC702D17D86700D8BD71 /* Exceptions for "Day 17" folder in "Copy Files" phase from "Day 17" target */,
+			);
+			path = "Day 17";
+			sourceTree = "<group>";
+		};
 		A03C27392D040E9C00AA5A8D /* Day 7 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -490,6 +517,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A037DC612D17CE8700D8BD71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A03C27352D040E9B00AA5A8D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -583,6 +617,7 @@
 				A0EBDB732D0F79A800053B82 /* Day 14 */,
 				A00A46B52D12331700CB4A60 /* Day 15 */,
 				A0F050732D176DF400719B4B /* Day 16 */,
+				A037DC652D17CE8700D8BD71 /* Day 17 */,
 				A05EB39C2CFC89AD00FE96C0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -606,6 +641,7 @@
 				A0EBDB722D0F79A800053B82 /* Day 14 */,
 				A00A46B42D12331700CB4A60 /* Day 15 */,
 				A0F050722D176DF400719B4B /* Day 16 */,
+				A037DC642D17CE8700D8BD71 /* Day 17 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -743,6 +779,28 @@
 			);
 			productName = "Day 6";
 			productReference = A028C5002D02C75100470FD0 /* Day 6 */;
+			productType = "com.apple.product-type.tool";
+		};
+		A037DC632D17CE8700D8BD71 /* Day 17 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A037DC682D17CE8700D8BD71 /* Build configuration list for PBXNativeTarget "Day 17" */;
+			buildPhases = (
+				A037DC602D17CE8700D8BD71 /* Sources */,
+				A037DC612D17CE8700D8BD71 /* Frameworks */,
+				A037DC622D17CE8700D8BD71 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A037DC652D17CE8700D8BD71 /* Day 17 */,
+			);
+			name = "Day 17";
+			packageProductDependencies = (
+			);
+			productName = "Day 17";
+			productReference = A037DC642D17CE8700D8BD71 /* Day 17 */;
 			productType = "com.apple.product-type.tool";
 		};
 		A03C27372D040E9B00AA5A8D /* Day 7 */ = {
@@ -994,6 +1052,9 @@
 					A028C4FF2D02C75100470FD0 = {
 						CreatedOnToolsVersion = 16.1;
 					};
+					A037DC632D17CE8700D8BD71 = {
+						CreatedOnToolsVersion = 16.2;
+					};
 					A03C27372D040E9B00AA5A8D = {
 						CreatedOnToolsVersion = 16.1;
 					};
@@ -1059,6 +1120,7 @@
 				A0EBDB712D0F79A800053B82 /* Day 14 */,
 				A00A46B32D12331700CB4A60 /* Day 15 */,
 				A0F050712D176DF400719B4B /* Day 16 */,
+				A037DC632D17CE8700D8BD71 /* Day 17 */,
 			);
 		};
 /* End PBXProject section */
@@ -1100,6 +1162,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A028C4FC2D02C75100470FD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A037DC602D17CE8700D8BD71 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1314,6 +1383,28 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 27888865CT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A037DC692D17CE8700D8BD71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27888865CT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A037DC6A2D17CE8700D8BD71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 27888865CT;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1730,6 +1821,15 @@
 			buildConfigurations = (
 				A028C5042D02C75100470FD0 /* Debug */,
 				A028C5052D02C75100470FD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A037DC682D17CE8700D8BD71 /* Build configuration list for PBXNativeTarget "Day 17" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A037DC692D17CE8700D8BD71 /* Debug */,
+				A037DC6A2D17CE8700D8BD71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
