@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A00917222DDA763800561AD0 /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = A00917212DDA763800561AD0 /* DequeModule */; };
+		A00917372DDA7BA000561AD0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00917342DDA7BA000561AD0 /* main.swift */; };
 		A0F0507D2D17776000719B4B /* HeapModule in Frameworks */ = {isa = PBXBuildFile; productRef = A0F0507C2D17776000719B4B /* HeapModule */; };
 /* End PBXBuildFile section */
 
@@ -179,6 +180,9 @@
 /* Begin PBXFileReference section */
 		A005FD8C2D0A0D61002BAF19 /* Day 11 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 11"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A00917142DDA694000561AD0 /* Day 18 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 18"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00917332DDA7BA000561AD0 /* input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
+		A00917342DDA7BA000561AD0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A00917352DDA7BA000561AD0 /* spec.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = spec.txt; sourceTree = "<group>"; };
 		A00A46B42D12331700CB4A60 /* Day 15 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 15"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0238D432D016D660064B042 /* Day 5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 5"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A024B6F32D08EDDE00D676C2 /* Day 10 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 10"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -209,14 +213,6 @@
 		A009171F2DDA714F00561AD0 /* Exceptions for "Day 18" folder in "Copy Files" phase from "Day 18" target */ = {
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
 			buildPhase = A00917122DDA694000561AD0 /* CopyFiles */;
-			membershipExceptions = (
-				input.txt,
-				spec.txt,
-			);
-		};
-		A00917322DDA7B6500561AD0 /* Exceptions for "Day 19" folder in "Copy Files" phase from "Day 13" target */ = {
-			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
-			buildPhase = A0EBDB602D0CF77E00053B82 /* CopyFiles */;
 			membershipExceptions = (
 				input.txt,
 				spec.txt,
@@ -369,14 +365,6 @@
 				A009171F2DDA714F00561AD0 /* Exceptions for "Day 18" folder in "Copy Files" phase from "Day 18" target */,
 			);
 			path = "Day 18";
-			sourceTree = "<group>";
-		};
-		A009172F2DDA7B6500561AD0 /* Day 19 */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				A00917322DDA7B6500561AD0 /* Exceptions for "Day 19" folder in "Copy Files" phase from "Day 13" target */,
-			);
-			path = "Day 19";
 			sourceTree = "<group>";
 		};
 		A00A46B52D12331700CB4A60 /* Day 15 */ = {
@@ -640,6 +628,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A00917362DDA7BA000561AD0 /* Day 13 */ = {
+			isa = PBXGroup;
+			children = (
+				A00917332DDA7BA000561AD0 /* input.txt */,
+				A00917342DDA7BA000561AD0 /* main.swift */,
+				A00917352DDA7BA000561AD0 /* spec.txt */,
+			);
+			path = "Day 13";
+			sourceTree = "<group>";
+		};
 		A05EB3922CFC89AD00FE96C0 = {
 			isa = PBXGroup;
 			children = (
@@ -662,7 +660,7 @@
 				A00917152DDA694000561AD0 /* Day 18 */,
 				A00917202DDA763800561AD0 /* Frameworks */,
 				A05EB39C2CFC89AD00FE96C0 /* Products */,
-				A009172F2DDA7B6500561AD0 /* Day 19 */,
+				A00917362DDA7BA000561AD0 /* Day 13 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -928,7 +926,6 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				A009172F2DDA7B6500561AD0 /* Day 19 */,
 				A08831862D0BC95F00C9CA31 /* Day 12 */,
 			);
 			name = "Day 12";
@@ -1277,6 +1274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A00917372DDA7BA000561AD0 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
