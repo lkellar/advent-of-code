@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A00917222DDA763800561AD0 /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = A00917212DDA763800561AD0 /* DequeModule */; };
 		A00917372DDA7BA000561AD0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00917342DDA7BA000561AD0 /* main.swift */; };
+		A0A43C132DDC30F100FBD48F /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = A0A43C122DDC30F100FBD48F /* DequeModule */; };
 		A0F0507D2D17776000719B4B /* HeapModule in Frameworks */ = {isa = PBXBuildFile; productRef = A0F0507C2D17776000719B4B /* HeapModule */; };
 /* End PBXBuildFile section */
 
@@ -121,6 +122,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A0A43C042DDC193000FBD48F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A0EBDB602D0CF77E00053B82 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
@@ -202,6 +212,7 @@
 		A03C27382D040E9B00AA5A8D /* Day 7 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 7"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A075BFCE2CFE0B0000D32068 /* Day 2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 2"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A08831852D0BC95F00C9CA31 /* Day 12 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 12"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0A43C062DDC193000FBD48F /* Day 20 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 20"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0EBDB622D0CF77E00053B82 /* Day 13 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 13"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0EBDB722D0F79A800053B82 /* Day 14 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 14"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0EE5DC62D0699FB0060F774 /* Day 8 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 8"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -321,6 +332,14 @@
 				spec_one.txt,
 				spec_three.txt,
 				spec_two.txt,
+				spec.txt,
+			);
+		};
+		A0A43C112DDC206E00FBD48F /* Exceptions for "Day 20" folder in "Copy Files" phase from "Day 20" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = A0A43C042DDC193000FBD48F /* CopyFiles */;
+			membershipExceptions = (
+				input.txt,
 				spec.txt,
 			);
 		};
@@ -465,6 +484,14 @@
 			path = "Day 12";
 			sourceTree = "<group>";
 		};
+		A0A43C072DDC193000FBD48F /* Day 20 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A0A43C112DDC206E00FBD48F /* Exceptions for "Day 20" folder in "Copy Files" phase from "Day 20" target */,
+			);
+			path = "Day 20";
+			sourceTree = "<group>";
+		};
 		A0EBDB732D0F79A800053B82 /* Day 14 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -601,6 +628,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A0A43C032DDC193000FBD48F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0A43C132DDC30F100FBD48F /* DequeModule in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A0EBDB5F2D0CF77E00053B82 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -692,6 +727,7 @@
 				A037DC652D17CE8700D8BD71 /* Day 17 */,
 				A00917152DDA694000561AD0 /* Day 18 */,
 				A009173D2DDA7EBC00561AD0 /* Day 19 */,
+				A0A43C072DDC193000FBD48F /* Day 20 */,
 				A00917202DDA763800561AD0 /* Frameworks */,
 				A05EB39C2CFC89AD00FE96C0 /* Products */,
 				A00917362DDA7BA000561AD0 /* Day 13 */,
@@ -720,6 +756,7 @@
 				A037DC642D17CE8700D8BD71 /* Day 17 */,
 				A00917142DDA694000561AD0 /* Day 18 */,
 				A009173C2DDA7EBC00561AD0 /* Day 19 */,
+				A0A43C062DDC193000FBD48F /* Day 20 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -992,6 +1029,29 @@
 			productReference = A08831852D0BC95F00C9CA31 /* Day 12 */;
 			productType = "com.apple.product-type.tool";
 		};
+		A0A43C052DDC193000FBD48F /* Day 20 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0A43C0C2DDC193000FBD48F /* Build configuration list for PBXNativeTarget "Day 20" */;
+			buildPhases = (
+				A0A43C022DDC193000FBD48F /* Sources */,
+				A0A43C032DDC193000FBD48F /* Frameworks */,
+				A0A43C042DDC193000FBD48F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A0A43C072DDC193000FBD48F /* Day 20 */,
+			);
+			name = "Day 20";
+			packageProductDependencies = (
+				A0A43C122DDC30F100FBD48F /* DequeModule */,
+			);
+			productName = "Day 20";
+			productReference = A0A43C062DDC193000FBD48F /* Day 20 */;
+			productType = "com.apple.product-type.tool";
+		};
 		A0EBDB612D0CF77E00053B82 /* Day 13 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0EBDB682D0CF77E00053B82 /* Build configuration list for PBXNativeTarget "Day 13" */;
@@ -1190,6 +1250,9 @@
 					A08831842D0BC95F00C9CA31 = {
 						CreatedOnToolsVersion = 16.1;
 					};
+					A0A43C052DDC193000FBD48F = {
+						CreatedOnToolsVersion = 16.3;
+					};
 					A0EBDB612D0CF77E00053B82 = {
 						CreatedOnToolsVersion = 16.2;
 					};
@@ -1249,6 +1312,7 @@
 				A037DC632D17CE8700D8BD71 /* Day 17 */,
 				A00917132DDA694000561AD0 /* Day 18 */,
 				A009173B2DDA7EBC00561AD0 /* Day 19 */,
+				A0A43C052DDC193000FBD48F /* Day 20 */,
 			);
 		};
 /* End PBXProject section */
@@ -1332,6 +1396,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A08831812D0BC95F00C9CA31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0A43C022DDC193000FBD48F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1775,6 +1846,30 @@
 			};
 			name = Release;
 		};
+		A0A43C0A2DDC193000FBD48F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27888865CT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A0A43C0B2DDC193000FBD48F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27888865CT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		A0EBDB662D0CF77E00053B82 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2045,6 +2140,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		A0A43C0C2DDC193000FBD48F /* Build configuration list for PBXNativeTarget "Day 20" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0A43C0A2DDC193000FBD48F /* Debug */,
+				A0A43C0B2DDC193000FBD48F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A0EBDB682D0CF77E00053B82 /* Build configuration list for PBXNativeTarget "Day 13" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2123,6 +2227,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		A00917212DDA763800561AD0 /* DequeModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0F0507B2D17776000719B4B /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = DequeModule;
+		};
+		A0A43C122DDC30F100FBD48F /* DequeModule */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A0F0507B2D17776000719B4B /* XCRemoteSwiftPackageReference "swift-collections" */;
 			productName = DequeModule;

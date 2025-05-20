@@ -42,7 +42,6 @@ enum Direction {
     case Down
 }
 
-let directionFlips: [Direction: Direction] = [.Right: .Left, .Left: .Right, .Up: .Down, .Down: .Up]
 let allDirections: [Direction] = [.Left, .Right, .Up, .Down]
 
 var prims: [[Primum]] = Array(repeating: Array(repeating: Primum(), count: width), count: height)
