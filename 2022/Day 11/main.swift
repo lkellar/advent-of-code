@@ -40,13 +40,10 @@ class Monkey {
     }
     
     func flushItems() {
-        /*self.items = self.incomingItems
-        self.incomingItems = []*/
         self.items = []
     }
     
     func addItem(_ item: Int) {
-        //self.incomingItems.append(item)
         self.items.append(item)
     }
     
@@ -76,6 +73,8 @@ enum Operator: String {
     }
 }
 
+var P2_MODULO: Int = 1
+
 let monkeys: [Monkey] = chunks.map { chunk in
     let lines = chunk.split(whereSeparator: \.isNewline)
     let items = lines[1].split(separator: ":", maxSplits: 1)[1].split(separator: ",").map {
@@ -85,11 +84,18 @@ let monkeys: [Monkey] = chunks.map { chunk in
     let opSymbol = Operator(rawValue: String(operations[0]))!
     let opValue = operations[1]
     
-    let op: (Int) -> Int = {opSymbol.compute($0, opValue == "old" ? $0 : Int(opValue)!) / (PART_TWO ? 1 : 3) }
+    var op: (Int) -> Int
+    if PART_TWO {
+        op = {opSymbol.compute($0, opValue == "old" ? $0 : Int(opValue)!) % P2_MODULO }
+    } else {
+        op = {opSymbol.compute($0, opValue == "old" ? $0 : Int(opValue)!) / 3 }
+    }
     
     let testValue = Int(lines[3].split(whereSeparator: \.isWhitespace).last!)!
     let trueDest = Int(lines[4].split(whereSeparator: \.isWhitespace).last!)!
     let falseDest = Int(lines[5].split(whereSeparator: \.isWhitespace).last!)!
+    
+    P2_MODULO *= testValue
     
     let test: (Int) -> Int = {($0 % testValue == 0) ? trueDest : falseDest}
     
@@ -105,9 +111,6 @@ func processRound() {
         }
         monkey.flushItems()
     }
-    /*for monkey in monkeys {
-        monkey.flushItems()
-    }*/
 }
 
 func findTwoMaxes(_ data: [Int]) -> (Int, Int) {
