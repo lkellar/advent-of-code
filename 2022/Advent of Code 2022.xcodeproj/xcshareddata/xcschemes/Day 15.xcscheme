@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1630"
+   LastUpgradeVersion = "1640"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,10 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A028A86A2DE652CD006E6FF6"
-               BuildableName = "Day 25"
-               BlueprintName = "Day 25"
-               ReferencedContainer = "container:Advent of Code 2024.xcodeproj">
+               BlueprintIdentifier = "A0E5B3BD2E035A39003F72D0"
+               BuildableName = "Day 15"
+               BlueprintName = "Day 15"
+               ReferencedContainer = "container:Advent of Code 2022.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -31,7 +31,7 @@
       shouldAutocreateTestPlan = "YES">
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -45,20 +45,24 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A028A86A2DE652CD006E6FF6"
-            BuildableName = "Day 25"
-            BlueprintName = "Day 25"
-            ReferencedContainer = "container:Advent of Code 2024.xcodeproj">
+            BlueprintIdentifier = "A0E5B3BD2E035A39003F72D0"
+            BuildableName = "Day 15"
+            BlueprintName = "Day 15"
+            ReferencedContainer = "container:Advent of Code 2022.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "spec.txt"
+            argument = "spec.txt 10"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "input.txt 2000000"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "input.txt"
-            isEnabled = "NO">
+            argument = "two"
+            isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
    </LaunchAction>
@@ -72,10 +76,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A028A86A2DE652CD006E6FF6"
-            BuildableName = "Day 25"
-            BlueprintName = "Day 25"
-            ReferencedContainer = "container:Advent of Code 2024.xcodeproj">
+            BlueprintIdentifier = "A0E5B3BD2E035A39003F72D0"
+            BuildableName = "Day 15"
+            BlueprintName = "Day 15"
+            ReferencedContainer = "container:Advent of Code 2022.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
