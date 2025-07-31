@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A01C7DD02E30661A00773931 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = A01C7DCF2E30661A00773931 /* Algorithms */; };
 		A0313C5A2E2EEFF600B91D90 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = A0313C592E2EEFF600B91D90 /* Algorithms */; };
+		A0E9458E2E3AE0A600C77FFE /* HeapModule in Frameworks */ = {isa = PBXBuildFile; productRef = A0E9458D2E3AE0A600C77FFE /* HeapModule */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -138,6 +139,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A096B9EB2E39A23400FECC40 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -155,6 +165,7 @@
 		A084D23C2E36BAA700D3125E /* Day 12 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 12"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A084D2512E384CFD00D3125E /* Day 13 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 13"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A084D2612E38605600D3125E /* Day 14 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 14"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A096B9ED2E39A23400FECC40 /* Day 15 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 15"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
@@ -267,6 +278,14 @@
 		A084D26C2E38607800D3125E /* Exceptions for "Day 14" folder in "Copy Files" phase from "Day 14" target */ = {
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
 			buildPhase = A084D25F2E38605600D3125E /* CopyFiles */;
+			membershipExceptions = (
+				input.txt,
+				spec.txt,
+			);
+		};
+		A096B9F92E39A25300FECC40 /* Exceptions for "Day 15" folder in "Copy Files" phase from "Day 15" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = A096B9EB2E39A23400FECC40 /* CopyFiles */;
 			membershipExceptions = (
 				input.txt,
 				spec.txt,
@@ -387,6 +406,14 @@
 			path = "Day 14";
 			sourceTree = "<group>";
 		};
+		A096B9EE2E39A23400FECC40 /* Day 15 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A096B9F92E39A25300FECC40 /* Exceptions for "Day 15" folder in "Copy Files" phase from "Day 15" target */,
+			);
+			path = "Day 15";
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -490,6 +517,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A096B9EA2E39A23400FECC40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0E9458E2E3AE0A600C77FFE /* HeapModule in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -517,6 +552,7 @@
 				A084D23D2E36BAA700D3125E /* Day 12 */,
 				A084D2522E384CFD00D3125E /* Day 13 */,
 				A084D2622E38605600D3125E /* Day 14 */,
+				A096B9EE2E39A23400FECC40 /* Day 15 */,
 				A01C7DCE2E30661A00773931 /* Frameworks */,
 				A0313C492E2EECB800B91D90 /* Products */,
 			);
@@ -539,6 +575,7 @@
 				A084D23C2E36BAA700D3125E /* Day 12 */,
 				A084D2512E384CFD00D3125E /* Day 13 */,
 				A084D2612E38605600D3125E /* Day 14 */,
+				A096B9ED2E39A23400FECC40 /* Day 15 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -856,6 +893,29 @@
 			productReference = A084D2612E38605600D3125E /* Day 14 */;
 			productType = "com.apple.product-type.tool";
 		};
+		A096B9EC2E39A23400FECC40 /* Day 15 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A096B9F32E39A23400FECC40 /* Build configuration list for PBXNativeTarget "Day 15" */;
+			buildPhases = (
+				A096B9E92E39A23400FECC40 /* Sources */,
+				A096B9EA2E39A23400FECC40 /* Frameworks */,
+				A096B9EB2E39A23400FECC40 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A096B9EE2E39A23400FECC40 /* Day 15 */,
+			);
+			name = "Day 15";
+			packageProductDependencies = (
+				A0E9458D2E3AE0A600C77FFE /* HeapModule */,
+			);
+			productName = "Day 15";
+			productReference = A096B9ED2E39A23400FECC40 /* Day 15 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -908,6 +968,9 @@
 					A084D2602E38605600D3125E = {
 						CreatedOnToolsVersion = 16.4;
 					};
+					A096B9EC2E39A23400FECC40 = {
+						CreatedOnToolsVersion = 16.4;
+					};
 				};
 			};
 			buildConfigurationList = A0313C432E2EECB800B91D90 /* Build configuration list for PBXProject "Advent of Code 2021" */;
@@ -921,6 +984,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				A0313C582E2EEFF600B91D90 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				A096B9FA2E39A66200FECC40 /* XCRemoteSwiftPackageReference "swift-collections" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A0313C492E2EECB800B91D90 /* Products */;
@@ -941,6 +1005,7 @@
 				A084D23B2E36BAA700D3125E /* Day 12 */,
 				A084D2502E384CFD00D3125E /* Day 13 */,
 				A084D2602E38605600D3125E /* Day 14 */,
+				A096B9EC2E39A23400FECC40 /* Day 15 */,
 			);
 		};
 /* End PBXProject section */
@@ -1038,6 +1103,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A084D25D2E38605600D3125E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A096B9E92E39A23400FECC40 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1417,6 +1489,24 @@
 			};
 			name = Release;
 		};
+		A096B9F12E39A23400FECC40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A096B9F22E39A23400FECC40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1555,12 +1645,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		A096B9F32E39A23400FECC40 /* Build configuration list for PBXNativeTarget "Day 15" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A096B9F12E39A23400FECC40 /* Debug */,
+				A096B9F22E39A23400FECC40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
 		A0313C582E2EEFF600B91D90 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.1;
+			};
+		};
+		A096B9FA2E39A66200FECC40 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.2.1;
@@ -1578,6 +1685,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A0313C582E2EEFF600B91D90 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
 			productName = Algorithms;
+		};
+		A0E9458D2E3AE0A600C77FFE /* HeapModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A096B9FA2E39A66200FECC40 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = HeapModule;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
