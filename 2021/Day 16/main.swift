@@ -47,8 +47,13 @@ enum PacketType: Int {
     case equalTo = 7
 }
 
+struct Packet {
+    let versionSum: Int
+    let value: Int
+}
+
 // return version sum
-func parsePacket(_ packet: String, index: inout String.Index) ->Int  {
+func parsePacket(_ packet: String, index: inout String.Index) -> Packet  {
     var oldIndex: String.Index = index
     func incrementIndex(by: Int) {
         oldIndex = index
@@ -61,12 +66,18 @@ func parsePacket(_ packet: String, index: inout String.Index) ->Int  {
     var versionSum = currentPacket
     // next 3 bits is type
     incrementIndex(by: 3)
+    let type = PacketType(rawValue: currentPacket)!
+    var subpacketValues: [Int] = []
     if currentPacket == 4 {
         var chunk: Substring
+        var valStr = ""
         repeat {
             incrementIndex(by: 5)
             chunk = packet[oldIndex..<index]
+            valStr += chunk[chunk.index(oldIndex, offsetBy: 1)..<index]
         } while chunk.first! != "0"
+        let value = Int(valStr, radix: 2)!
+        subpacketValues.append(value)
     } else {
         incrementIndex(by: 1)
         let lengthTypeId = LengthType(rawValue: packet[oldIndex])!
@@ -75,7 +86,9 @@ func parsePacket(_ packet: String, index: inout String.Index) ->Int  {
             let subpacketBitLength = currentPacket
             let recursionStart = index
             while packet.distance(from: recursionStart, to: index) < subpacketBitLength {
-                versionSum += parsePacket(packet, index: &index)
+                let result = parsePacket(packet, index: &index)
+                versionSum += result.versionSum
+                subpacketValues.append(result.value)
             }
             guard packet.distance(from: recursionStart, to: index) == subpacketBitLength else {
                 print("wrong distance")
@@ -85,13 +98,54 @@ func parsePacket(_ packet: String, index: inout String.Index) ->Int  {
             incrementIndex(by: 11)
             let numberOfSubpackets = currentPacket
             for _ in 0..<numberOfSubpackets {
-                versionSum += parsePacket(packet, index: &index)
+                let result = parsePacket(packet, index: &index)
+                versionSum += result.versionSum
+                subpacketValues.append(result.value)
             }
         }
     }
-    return versionSum
+    var value: Int? = nil
+    switch type {
+    case .sum:
+        value = subpacketValues.reduce(0, +)
+    case .product:
+        value = subpacketValues.reduce(1, *)
+    case .minimum:
+        value = subpacketValues.min()
+    case .maximum:
+        value = subpacketValues.max()
+    case .literal:
+        assert(subpacketValues.count == 1)
+        value = subpacketValues[0]
+    case .greaterThan:
+        assert(subpacketValues.count == 2)
+        if subpacketValues[0] > subpacketValues[1] {
+            value = 1
+        } else {
+            value = 0
+        }
+    case .lessThan:
+        assert(subpacketValues.count == 2)
+        if subpacketValues[0] < subpacketValues[1] {
+            value = 1
+        } else {
+            value = 0
+        }
+    case .equalTo:
+        assert(subpacketValues.count == 2)
+        if subpacketValues[0] == subpacketValues[1] {
+            value = 1
+        } else {
+            value = 0
+        }
+    }
+    return Packet(versionSum: versionSum, value: value!)
 }
 
 var index = binaryStr.startIndex
-let versionSum = parsePacket(binaryStr, index: &index)
-print("Packet Version Sum: \(versionSum)")
+let result = parsePacket(binaryStr, index: &index)
+if PART_TWO {
+    print("Packet Value: \(result.value)")
+} else {
+    print("Packet Version Sum: \(result.versionSum)")
+}
