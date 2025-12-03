@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXCopyFilesBuildPhase section */
+		A03BFA9F2EDFD0030071D171 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A08CA8EB2EDE063A006DD28B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
@@ -19,10 +28,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A03BFAA12EDFD0030071D171 /* Day 2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 2"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A08CA8ED2EDE063A006DD28B /* Day 1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 1"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		A03BFAAC2EDFD01E0071D171 /* Exceptions for "Day 2" folder in "Copy Files" phase from "Day 2" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = A03BFA9F2EDFD0030071D171 /* CopyFiles */;
+			membershipExceptions = (
+				input.txt,
+				spec.txt,
+			);
+		};
 		A0FC20D22EDE07E700B46277 /* Exceptions for "Day 1" folder in "Copy Files" phase from "Day 1" target */ = {
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
 			buildPhase = A08CA8EB2EDE063A006DD28B /* CopyFiles */;
@@ -34,6 +52,14 @@
 /* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		A03BFAA22EDFD0040071D171 /* Day 2 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A03BFAAC2EDFD01E0071D171 /* Exceptions for "Day 2" folder in "Copy Files" phase from "Day 2" target */,
+			);
+			path = "Day 2";
+			sourceTree = "<group>";
+		};
 		A08CA8EF2EDE063A006DD28B /* Day 1 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -45,6 +71,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A03BFA9E2EDFD0030071D171 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A08CA8EA2EDE063A006DD28B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -59,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				A08CA8EF2EDE063A006DD28B /* Day 1 */,
+				A03BFAA22EDFD0040071D171 /* Day 2 */,
 				A08CA8EE2EDE063A006DD28B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				A08CA8ED2EDE063A006DD28B /* Day 1 */,
+				A03BFAA12EDFD0030071D171 /* Day 2 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,6 +109,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A03BFAA02EDFD0030071D171 /* Day 2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A03BFAA72EDFD0040071D171 /* Build configuration list for PBXNativeTarget "Day 2" */;
+			buildPhases = (
+				A03BFA9D2EDFD0030071D171 /* Sources */,
+				A03BFA9E2EDFD0030071D171 /* Frameworks */,
+				A03BFA9F2EDFD0030071D171 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A03BFAA22EDFD0040071D171 /* Day 2 */,
+			);
+			name = "Day 2";
+			packageProductDependencies = (
+			);
+			productName = "Day 2";
+			productReference = A03BFAA12EDFD0030071D171 /* Day 2 */;
+			productType = "com.apple.product-type.tool";
+		};
 		A08CA8EC2EDE063A006DD28B /* Day 1 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A08CA8F42EDE063A006DD28B /* Build configuration list for PBXNativeTarget "Day 1" */;
@@ -106,6 +163,9 @@
 				LastSwiftUpdateCheck = 2610;
 				LastUpgradeCheck = 2610;
 				TargetAttributes = {
+					A03BFAA02EDFD0030071D171 = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
 					A08CA8EC2EDE063A006DD28B = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
@@ -126,11 +186,19 @@
 			projectRoot = "";
 			targets = (
 				A08CA8EC2EDE063A006DD28B /* Day 1 */,
+				A03BFAA02EDFD0030071D171 /* Day 2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A03BFA9D2EDFD0030071D171 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A08CA8E92EDE063A006DD28B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -141,6 +209,28 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		A03BFAA52EDFD0040071D171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A03BFAA62EDFD0040071D171 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		A08CA8F22EDE063A006DD28B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -284,6 +374,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A03BFAA72EDFD0040071D171 /* Build configuration list for PBXNativeTarget "Day 2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A03BFAA52EDFD0040071D171 /* Debug */,
+				A03BFAA62EDFD0040071D171 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A08CA8E82EDE063A006DD28B /* Build configuration list for PBXProject "Advent of Code 2025" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
