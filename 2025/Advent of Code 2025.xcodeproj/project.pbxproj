@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A01326762FE484FC005D6AD1 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = A01326752FE484FC005D6AD1 /* Algorithms */; };
+		A0B1A43C2EF0E99400F61083 /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = A0B1A43B2EF0E99400F61083 /* DequeModule */; };
 		A0C70D6C2EE7627100117542 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = A0C70D6B2EE7627100117542 /* Algorithms */; };
 		A0DEA4F92EE9F43F0096F6A1 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = A0DEA4F82EE9F43F0096F6A1 /* Algorithms */; };
 /* End PBXBuildFile section */
@@ -40,6 +42,15 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A03BFA9F2EDFD0030071D171 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A05F75392EEA454D00C7667C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
 			dstPath = "";
@@ -100,6 +111,7 @@
 		A01C50942EE7EA70003F5C69 /* Day 9 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 9"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A02ECC852EE0C76A00EBE81F /* Day 3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 3"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03BFAA12EDFD0030071D171 /* Day 2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 2"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A05F753B2EEA454D00C7667C /* Day 10 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 10"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A07A8E672EE1F25000FA5197 /* Day 4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 4"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A07AC38E2EE3F1C000444CD9 /* Day 5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 5"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A08CA8ED2EDE063A006DD28B /* Day 1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 1"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +147,14 @@
 		A03BFAAC2EDFD01E0071D171 /* Exceptions for "Day 2" folder in "Copy Files" phase from "Day 2" target */ = {
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
 			buildPhase = A03BFA9F2EDFD0030071D171 /* CopyFiles */;
+			membershipExceptions = (
+				input.txt,
+				spec.txt,
+			);
+		};
+		A05F75482EEA457200C7667C /* Exceptions for "Day 10" folder in "Copy Files" phase from "Day 10" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = A05F75392EEA454D00C7667C /* CopyFiles */;
 			membershipExceptions = (
 				input.txt,
 				spec.txt,
@@ -215,6 +235,14 @@
 			path = "Day 2";
 			sourceTree = "<group>";
 		};
+		A05F753C2EEA454D00C7667C /* Day 10 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A05F75482EEA457200C7667C /* Exceptions for "Day 10" folder in "Copy Files" phase from "Day 10" target */,
+			);
+			path = "Day 10";
+			sourceTree = "<group>";
+		};
 		A07A8E682EE1F25000FA5197 /* Day 4 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -287,6 +315,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A05F75382EEA454D00C7667C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01326762FE484FC005D6AD1 /* Algorithms in Frameworks */,
+				A0B1A43C2EF0E99400F61083 /* DequeModule in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A07A8E642EE1F25000FA5197 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -338,6 +375,7 @@
 				A0108EB22EE60B6A00850ACB /* Day 7 */,
 				A0C70D5C2EE755AD00117542 /* Day 8 */,
 				A01C50952EE7EA70003F5C69 /* Day 9 */,
+				A05F753C2EEA454D00C7667C /* Day 10 */,
 				A0DEA4F72EE9F43F0096F6A1 /* Frameworks */,
 				A08CA8EE2EDE063A006DD28B /* Products */,
 			);
@@ -355,6 +393,7 @@
 				A0108EB12EE60B6A00850ACB /* Day 7 */,
 				A0C70D5B2EE755AD00117542 /* Day 8 */,
 				A01C50942EE7EA70003F5C69 /* Day 9 */,
+				A05F753B2EEA454D00C7667C /* Day 10 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -456,6 +495,30 @@
 			);
 			productName = "Day 2";
 			productReference = A03BFAA12EDFD0030071D171 /* Day 2 */;
+			productType = "com.apple.product-type.tool";
+		};
+		A05F753A2EEA454D00C7667C /* Day 10 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A05F75412EEA454D00C7667C /* Build configuration list for PBXNativeTarget "Day 10" */;
+			buildPhases = (
+				A05F75372EEA454D00C7667C /* Sources */,
+				A05F75382EEA454D00C7667C /* Frameworks */,
+				A05F75392EEA454D00C7667C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A05F753C2EEA454D00C7667C /* Day 10 */,
+			);
+			name = "Day 10";
+			packageProductDependencies = (
+				A0B1A43B2EF0E99400F61083 /* DequeModule */,
+				A01326752FE484FC005D6AD1 /* Algorithms */,
+			);
+			productName = "Day 10";
+			productReference = A05F753B2EEA454D00C7667C /* Day 10 */;
 			productType = "com.apple.product-type.tool";
 		};
 		A07A8E662EE1F25000FA5197 /* Day 4 */ = {
@@ -577,7 +640,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2610;
-				LastUpgradeCheck = 2610;
+				LastUpgradeCheck = 2650;
 				TargetAttributes = {
 					A0108EB02EE60B6A00850ACB = {
 						CreatedOnToolsVersion = 26.1.1;
@@ -589,6 +652,9 @@
 						CreatedOnToolsVersion = 26.1.1;
 					};
 					A03BFAA02EDFD0030071D171 = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
+					A05F753A2EEA454D00C7667C = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
 					A07A8E662EE1F25000FA5197 = {
@@ -619,6 +685,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				A0C70D6A2EE7627100117542 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				A0B1A43A2EF0E99400F61083 /* XCRemoteSwiftPackageReference "swift-collections" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A08CA8EE2EDE063A006DD28B /* Products */;
@@ -634,6 +701,7 @@
 				A0108EB02EE60B6A00850ACB /* Day 7 */,
 				A0C70D5A2EE755AD00117542 /* Day 8 */,
 				A01C50932EE7EA70003F5C69 /* Day 9 */,
+				A05F753A2EEA454D00C7667C /* Day 10 */,
 			);
 		};
 /* End PBXProject section */
@@ -661,6 +729,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A03BFA9D2EDFD0030071D171 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A05F75372EEA454D00C7667C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -709,6 +784,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -720,6 +796,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -731,6 +808,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -742,6 +820,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -753,6 +832,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -764,6 +844,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -775,6 +856,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -786,6 +868,45 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A05F753F2EEA454D00C7667C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Day\\ 10/env/lib/python3.14/site-packages/numpy/_core/lib",
+					"$(PROJECT_DIR)/Day\\ 10/env/lib/python3.14/site-packages/scipy/.dylibs",
+					"$(PROJECT_DIR)/Day\\ 10/env/lib/python3.14/site-packages/scipy/.dylibs",
+					"$(PROJECT_DIR)/Day\\ 10/env/lib/python3.14/site-packages/scipy/.dylibs",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A05F75402EEA454D00C7667C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Day\\ 10/env/lib/python3.14/site-packages/numpy/_core/lib",
+					"$(PROJECT_DIR)/Day\\ 10/env/lib/python3.14/site-packages/scipy/.dylibs",
+					"$(PROJECT_DIR)/Day\\ 10/env/lib/python3.14/site-packages/scipy/.dylibs",
+					"$(PROJECT_DIR)/Day\\ 10/env/lib/python3.14/site-packages/scipy/.dylibs",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -797,6 +918,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -808,6 +930,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -819,6 +942,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -830,6 +954,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -871,6 +996,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -895,6 +1021,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -934,6 +1061,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -951,6 +1079,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
@@ -959,6 +1088,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -970,6 +1100,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -981,6 +1112,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -992,6 +1124,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -1003,6 +1136,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -1014,6 +1148,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -1056,6 +1191,15 @@
 			buildConfigurations = (
 				A03BFAA52EDFD0040071D171 /* Debug */,
 				A03BFAA62EDFD0040071D171 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A05F75412EEA454D00C7667C /* Build configuration list for PBXNativeTarget "Day 10" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A05F753F2EEA454D00C7667C /* Debug */,
+				A05F75402EEA454D00C7667C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1117,6 +1261,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		A0B1A43A2EF0E99400F61083 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
 		A0C70D6A2EE7627100117542 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-algorithms.git";
@@ -1128,6 +1280,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A01326752FE484FC005D6AD1 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0C70D6A2EE7627100117542 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+		A0B1A43B2EF0E99400F61083 /* DequeModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0B1A43A2EF0E99400F61083 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = DequeModule;
+		};
 		A0C70D6B2EE7627100117542 /* Algorithms */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A0C70D6A2EE7627100117542 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
