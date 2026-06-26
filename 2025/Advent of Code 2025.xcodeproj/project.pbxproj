@@ -126,6 +126,7 @@
 		A07AC38E2EE3F1C000444CD9 /* Day 5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 5"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A08CA8ED2EDE063A006DD28B /* Day 1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 1"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C70D5B2EE755AD00117542 /* Day 8 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 8"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0CDA9982FEE091800DD16EA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A0F509782EE4F575004AD8F6 /* Day 6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 6"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -400,6 +401,7 @@
 		A08CA8E42EDE063A006DD28B = {
 			isa = PBXGroup;
 			children = (
+				A0CDA9992FEE091800DD16EA /* Day 12 */,
 				A08CA8EF2EDE063A006DD28B /* Day 1 */,
 				A03BFAA22EDFD0040071D171 /* Day 2 */,
 				A02ECC862EE0C76A00EBE81F /* Day 3 */,
@@ -432,6 +434,14 @@
 				A013267B2FE49CFF005D6AD1 /* Day 11 */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A0CDA9992FEE091800DD16EA /* Day 12 */ = {
+			isa = PBXGroup;
+			children = (
+				A0CDA9982FEE091800DD16EA /* main.swift */,
+			);
+			path = "Day 12";
 			sourceTree = "<group>";
 		};
 		A0DEA4F72EE9F43F0096F6A1 /* Frameworks */ = {
