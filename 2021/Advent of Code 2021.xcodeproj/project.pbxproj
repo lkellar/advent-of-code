@@ -123,6 +123,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A0454EF130056D9E00D4E239 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		A084D23A2E36BAA700D3125E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
@@ -237,6 +246,7 @@
 		A0313C482E2EECB800B91D90 /* Day 1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 1"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0313C5F2E2EF19100B91D90 /* Day 2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 2"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0313C702E2EF69300B91D90 /* Day 3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 3"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0454EF330056D9E00D4E239 /* Day 24 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 24"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A084D23C2E36BAA700D3125E /* Day 12 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 12"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A084D2512E384CFD00D3125E /* Day 13 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 13"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A084D2612E38605600D3125E /* Day 14 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 14"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -538,6 +548,11 @@
 			path = "Day 3";
 			sourceTree = "<group>";
 		};
+		A0454EF430056D9E00D4E239 /* Day 24 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Day 24";
+			sourceTree = "<group>";
+		};
 		A084D23D2E36BAA700D3125E /* Day 12 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -715,6 +730,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A0454EF030056D9E00D4E239 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A084D2392E36BAA700D3125E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -831,6 +853,7 @@
 				A089EDD92FEF36E5001BADD6 /* Day 21 */,
 				A089EDEA2FF06B5C001BADD6 /* Day 22 */,
 				A0B45B0B30046C4200DDB718 /* Day 23 */,
+				A0454EF430056D9E00D4E239 /* Day 24 */,
 				A01C7DCE2E30661A00773931 /* Frameworks */,
 				A0313C492E2EECB800B91D90 /* Products */,
 			);
@@ -862,6 +885,7 @@
 				A089EDD82FEF36E5001BADD6 /* Day 21 */,
 				A089EDE92FF06B5C001BADD6 /* Day 22 */,
 				A0B45B0A30046C4200DDB718 /* Day 23 */,
+				A0454EF330056D9E00D4E239 /* Day 24 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1133,6 +1157,28 @@
 			);
 			productName = "Day 3";
 			productReference = A0313C702E2EF69300B91D90 /* Day 3 */;
+			productType = "com.apple.product-type.tool";
+		};
+		A0454EF230056D9E00D4E239 /* Day 24 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0454EF930056D9E00D4E239 /* Build configuration list for PBXNativeTarget "Day 24" */;
+			buildPhases = (
+				A0454EEF30056D9E00D4E239 /* Sources */,
+				A0454EF030056D9E00D4E239 /* Frameworks */,
+				A0454EF130056D9E00D4E239 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A0454EF430056D9E00D4E239 /* Day 24 */,
+			);
+			name = "Day 24";
+			packageProductDependencies = (
+			);
+			productName = "Day 24";
+			productReference = A0454EF330056D9E00D4E239 /* Day 24 */;
 			productType = "com.apple.product-type.tool";
 		};
 		A084D23B2E36BAA700D3125E /* Day 12 */ = {
@@ -1426,6 +1472,9 @@
 					A0313C6F2E2EF69300B91D90 = {
 						CreatedOnToolsVersion = 16.4;
 					};
+					A0454EF230056D9E00D4E239 = {
+						CreatedOnToolsVersion = 26.6;
+					};
 					A084D23B2E36BAA700D3125E = {
 						CreatedOnToolsVersion = 16.4;
 					};
@@ -1502,6 +1551,7 @@
 				A089EDD72FEF36E5001BADD6 /* Day 21 */,
 				A089EDE82FF06B5C001BADD6 /* Day 22 */,
 				A0B45B0930046C4200DDB718 /* Day 23 */,
+				A0454EF230056D9E00D4E239 /* Day 24 */,
 			);
 		};
 /* End PBXProject section */
@@ -1585,6 +1635,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A0313C6C2E2EF69300B91D90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0454EEF30056D9E00D4E239 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2009,6 +2066,30 @@
 			};
 			name = Release;
 		};
+		A0454EF730056D9E00D4E239 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A0454EF830056D9E00D4E239 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		A084D2402E36BAA700D3125E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2361,6 +2442,15 @@
 			buildConfigurations = (
 				A0313C752E2EF69300B91D90 /* Debug */,
 				A0313C762E2EF69300B91D90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0454EF930056D9E00D4E239 /* Build configuration list for PBXNativeTarget "Day 24" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0454EF730056D9E00D4E239 /* Debug */,
+				A0454EF830056D9E00D4E239 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
