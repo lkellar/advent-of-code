@@ -10,3 +10,4 @@ Most days are written from a "clean enough to understand later, but focused towa
 - 2023: **25/25**
 - 2022: **25/25**
 - 2021: **25/25**
+- 2020: 1/25
