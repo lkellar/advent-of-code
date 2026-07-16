@@ -52,6 +52,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A0ADE5F93009380E00A2F6E3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +69,7 @@
 		A098B87F3005F8500014EE39 /* Day 1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 1"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A098B88F3005FA2C0014EE39 /* Day 2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 2"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0ADE5EB3009306200A2F6E3 /* Day 5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 5"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0ADE5FB3009380E00A2F6E3 /* Day 6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day 6"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
@@ -98,6 +108,14 @@
 		A0ADE5F6300932C100A2F6E3 /* Exceptions for "Day 5" folder in "Copy Files" phase from "Day 5" target */ = {
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
 			buildPhase = A0ADE5E93009306200A2F6E3 /* CopyFiles */;
+			membershipExceptions = (
+				input.txt,
+				spec.txt,
+			);
+		};
+		A0ADE6063009383000A2F6E3 /* Exceptions for "Day 6" folder in "Copy Files" phase from "Day 6" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = A0ADE5F93009380E00A2F6E3 /* CopyFiles */;
 			membershipExceptions = (
 				input.txt,
 				spec.txt,
@@ -146,6 +164,14 @@
 			path = "Day 5";
 			sourceTree = "<group>";
 		};
+		A0ADE5FC3009380E00A2F6E3 /* Day 6 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A0ADE6063009383000A2F6E3 /* Exceptions for "Day 6" folder in "Copy Files" phase from "Day 6" target */,
+			);
+			path = "Day 6";
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +210,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A0ADE5F83009380E00A2F6E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -195,6 +228,7 @@
 				A02E3A323006012200F3F743 /* Day 3 */,
 				A02E3A423006C01D00F3F743 /* Day 4 */,
 				A0ADE5EC3009306200A2F6E3 /* Day 5 */,
+				A0ADE5FC3009380E00A2F6E3 /* Day 6 */,
 				A0D45D323005F82300FFDBA5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -207,6 +241,7 @@
 				A02E3A313006012200F3F743 /* Day 3 */,
 				A02E3A413006C01D00F3F743 /* Day 4 */,
 				A0ADE5EB3009306200A2F6E3 /* Day 5 */,
+				A0ADE5FB3009380E00A2F6E3 /* Day 6 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -324,6 +359,28 @@
 			productReference = A0ADE5EB3009306200A2F6E3 /* Day 5 */;
 			productType = "com.apple.product-type.tool";
 		};
+		A0ADE5FA3009380E00A2F6E3 /* Day 6 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0ADE5FF3009380E00A2F6E3 /* Build configuration list for PBXNativeTarget "Day 6" */;
+			buildPhases = (
+				A0ADE5F73009380E00A2F6E3 /* Sources */,
+				A0ADE5F83009380E00A2F6E3 /* Frameworks */,
+				A0ADE5F93009380E00A2F6E3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A0ADE5FC3009380E00A2F6E3 /* Day 6 */,
+			);
+			name = "Day 6";
+			packageProductDependencies = (
+			);
+			productName = "Day 6";
+			productReference = A0ADE5FB3009380E00A2F6E3 /* Day 6 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -349,6 +406,9 @@
 					A0ADE5EA3009306200A2F6E3 = {
 						CreatedOnToolsVersion = 26.6;
 					};
+					A0ADE5FA3009380E00A2F6E3 = {
+						CreatedOnToolsVersion = 26.6;
+					};
 				};
 			};
 			buildConfigurationList = A0D45D2C3005F82200FFDBA5 /* Build configuration list for PBXProject "Advent of Code 2020" */;
@@ -370,6 +430,7 @@
 				A02E3A303006012200F3F743 /* Day 3 */,
 				A02E3A403006C01D00F3F743 /* Day 4 */,
 				A0ADE5EA3009306200A2F6E3 /* Day 5 */,
+				A0ADE5FA3009380E00A2F6E3 /* Day 6 */,
 			);
 		};
 /* End PBXProject section */
@@ -404,6 +465,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A0ADE5E73009306200A2F6E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0ADE5F73009380E00A2F6E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -513,6 +581,28 @@
 			name = Debug;
 		};
 		A0ADE5F03009306200A2F6E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A0ADE6003009380E00A2F6E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A0ADE6013009380E00A2F6E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -685,6 +775,15 @@
 			buildConfigurations = (
 				A0ADE5EF3009306200A2F6E3 /* Debug */,
 				A0ADE5F03009306200A2F6E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0ADE5FF3009380E00A2F6E3 /* Build configuration list for PBXNativeTarget "Day 6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0ADE6003009380E00A2F6E3 /* Debug */,
+				A0ADE6013009380E00A2F6E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
